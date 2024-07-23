@@ -1,4 +1,4 @@
-function getResponseFromAPI(success) {
+export function getResponseFromAPI(success) {
     return new Promise((resolve, reject) => {
         const status = success;
         if (!status) {
@@ -9,5 +9,3 @@ function getResponseFromAPI(success) {
         }
     });
 }
-
-export default getResponseFromAPI;
