@@ -1,5 +1,10 @@
 export default function createIteratorObject(report) {
-    let employees = Object.values(report.allEmployees);
+    let allEmployees = report.allEmployees
+    let employees = Object.values(allEmployees);
 
-    return employees;
+    let arr = new Array()
+    for (let i = 0; i < report.getNumberofDepartments(allEmployees); i++) {
+        arr.push(...employees)
+    }
+    return arr;
 }
