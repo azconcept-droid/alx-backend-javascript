@@ -3,7 +3,7 @@ export default function createIteratorObject(report) {
     let employees = Object.values(allEmployees);
 
     let arr = new Array()
-    for (let i = 0; i < report.getNumberofDepartments(allEmployees); i += 1) {
+    for (let i = 0; i < report.getNumberOfDepartments(allEmployees); i += 1) {
         arr.push(...employees)
     }
     return arr;
