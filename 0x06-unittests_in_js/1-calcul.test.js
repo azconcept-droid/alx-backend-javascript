@@ -9,7 +9,7 @@ describe('CalculateNumber', function () {
   });
 
 	describe('Test subtraction', function () {
-    it('should not return -4', function () {
+    it('should return -4', function () {
       assert.equal(calculateNumber('SUBTRACT', 1.4, 4.5), -4);
     });
   });
