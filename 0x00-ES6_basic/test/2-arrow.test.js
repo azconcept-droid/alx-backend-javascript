@@ -1,4 +1,4 @@
-import getNeighborhoodsList from './2-arrow.js';
+import getNeighborhoodsList from '../2-arrow.js';
 
 test('returns the list of neighborhoods', () => {
   const neighborhoodsList = new getNeighborhoodsList();
