@@ -1,7 +1,12 @@
 import { express } from "express"
-// import 
+import router from "./routes";
+
 const app = express();
 
-app.use('', )
+app.use('/', router)
+
+app.listen(1245, () => {
+  console.log('Server listening on port 1245')
+})
 
 export default app
