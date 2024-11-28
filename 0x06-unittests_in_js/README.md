@@ -5,6 +5,6 @@
 
 - [chai doc](https://www.chaijs.com/api/)
 - [mocha doc](https://mochajs.org/)
-- [sinon doc](https://sinonjs.org/)
+- [sinon doc](https://sinonjs.org/releases/v19/)
 - [express](https://expressjs.com/en/guide/routing.html)
 - [request](https://www.npmjs.com/package/request)
