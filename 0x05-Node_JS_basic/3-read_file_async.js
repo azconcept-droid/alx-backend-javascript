@@ -22,7 +22,12 @@ function countStudents(databasePath) {
           fields[field] = [keys[0]];
         }
       }
-      resolve({ students, fields });
+      console.log(`Number of students: ${students.length}`);
+
+      for (const [field, students] of Object.entries(fields)) {
+        console.log(`Number of students in ${field}: ${students.length}. List: ${students.join(', ')}`);
+      }
+      resolve(fields);
     });
   });
 }
