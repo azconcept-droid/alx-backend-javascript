@@ -1,14 +1,8 @@
 export default class ALXCourse {
   constructor(name, length, students) {
-    if (typeof name === 'string') {
-      this._name = name;
-    }
-    if (typeof length === 'number') {
-      this._length = length;
-    }
-    if (Array.isArray(students)) {
-      this._students = students;
-    }
+    this._name = name;
+    this._length = length;
+    this._students = students;
   }
 
   get name() {
@@ -24,14 +18,23 @@ export default class ALXCourse {
   }
 
   set name(name) {
+    if (typeof name !== 'string') {
+      throw new TypeError('Name must be string');
+    }
     this._name = name;
   }
 
   set length(len) {
+    if (typeof len !== 'number') {
+      throw new TypeError('Length must be a number');
+    }
     this._length = len;
   }
 
   set students(students) {
+    if (!Array.isArray(students)) {
+      throw new TypeError('Students must be array');
+    }
     this._students = students;
   }
 }
